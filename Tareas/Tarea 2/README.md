@@ -38,3 +38,5 @@ Me gustaria centrar la conclusion en el analisis de los equipos con un promedio 
 En el caso de los equipos negativos ocurre algo similar al de los equipos positivos pero con el sentimiento contrario ya que se puede observar que hay un equipo que sobre sale de los demas el cual es el Angers, este equipo tambien es francés y lleva el nombre de una ciudad pero en este caso en inglés esta palabra Angers es algo negativo por lo que los textos de este equipo se les da un score negativo.
 
 Tomando en cuenta lo anterior creo que cuando se incluyen muchos nombres o palabras extranjeras que puedan tener un significado en el idioma del analisis se deberia de tener un diccionario con el cual eliminar estas palabras del analisis de sentimientos y evitar ruido en los resultados.
+
+[Código de la tarea](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/blob/main/Tareas/Tarea%202/Tarea_2_Alvaro_Peque%C3%B1o.ipynb)
