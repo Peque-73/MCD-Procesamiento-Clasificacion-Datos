@@ -11,4 +11,5 @@ Se tiene una base de datos con textos de eventos de partidos de futbol, de todos
 Para el analisis de sentimientos se utilizó la libreria de nltk para hacer la parte del pre procesado y para la parte del score del sentimiento se utilizo nltk haciendo uso de vader. Una vez realizado el analisis de sentimientos a los textos se obtuvieron las siguientes graficas:
 
 En esta primer grafica podemos observar que para los textos de goles anotados en su mayoria con 68% son neutrales mientras que con 22% son positivos y el 10% restante son negativos:
+
 ![Sentimientos_goles_anotados](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/blob/main/Tareas/Tarea%202/Sentimientos_goles_anotados.png)
