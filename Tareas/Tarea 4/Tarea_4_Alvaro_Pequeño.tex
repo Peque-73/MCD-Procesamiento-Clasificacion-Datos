@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{ {C:/Users/alvar/Documents/Maestria en Ciencia de datos/Procesamiento y clasificación de datos/Tarea 4/} }
+
+\title{\textbf{Identificación de círculos en dibujos 2D de piezas}}
+\author{Alvaro Pequeño Mondragón}
+\date{12 de Febrero de 2025}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Introducción}
+	
+	Se quiere desarrollar un programa que sea capaz de hacer la revisión de forma automática de los dibujos técnicos en 2D hechos a partir de piezas 3D por medio de programas CAD/CAM. Para poder llegar al objetivo final lo primero que se quiere hacer es poder detectar ciertos elementos dentro de los dibujos 2D para poder usar estos datos como parámetros para poder identificar si el dibujo esta bien hecho y se puede aprobar o si se necesita rechazar para corregirse. \\
+	
+	\section*{Objetivo}
+	
+	Como se explicó en la introducción el primer paso para hacer el checador de dibujos es detectar ciertos elementos, por o que en este trabajo nos concentraremos en la detección de círculos ya que estos elementos nos indican agujeros donde pueden ir tornillos u otros elementos que sean importantes en la pieza y de esta manera podremos identificarlos para introducir esta información como parámetro para determinar si el dibujo está bien. \\
+	
+	
+	\section*{Procedimiento} 
+	
+	A continuación se muestra los pasos que se siguieron para poder hacer la detección de círculos y se muestra a su vez los cambios que van surgiendo en la imagen. \\
+	
+	Primero podemos ver la imagen original obtenida del dibujo: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{drawing}
+	
+	Lo primero que se hizo fue convertir la imagen a escala de grises para poder dejar un solo canal, ya que para la detección de círculos es necesario que la imagen esté en un solo canal. Debido a los colores de la imagen no se aprecio una diferencia: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{drawing_gray}
+	
+	Una vez que se tiene la imagen en escala de grises se pasa a binarizar la imagen para que sus pixeles solo puedan tomar 2 valores que son blanco negro. En la esta imagen se puede observar que aquellos pixeles que tenían color gris ya no se pueden observar mas, lo cual es algo que queremos ya que lo que esta en ese color nos puede causar ruido: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Drawing_binary}
+	
+	Una vez hecho lo anterior se procedió a cortar la imagen para concentrarnos en el área donde se encuentra la pieza: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Drawing_binary_cropped}
+	
+	Una vez hecho esto se aplica un desenfoque a la imagen para resaltar de mayor manera los bordes de la imagen, en este caso se usó un desenfoque gaussiano: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Drawing_binary_cropped_blurred}
+	
+	Una vez hecho el desenfoque podríamos hacer ya la detección de círculos pero primero mostramos como se ve la detección de bordes: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Drawing_edges}
+	
+	Una vez hecho lo anterior se puede realizar la detección de los círculos y se verá en la parte de los resultados. \\
+	
+	\section*{Resultados}
+	
+	Al principio se pretendía usar una sección de código para poder hacer la detección de los círculos pero después de varias iteraciones nos dimos cuenta de que esto no era posible ya que el código detectaba varios círculos y algunos de los círculos detectados no son detectables para el ojo humano. Debido a lo anterior se decidió hacer 2 códigos donde uno detecta los círculos mas pequeños y el otro detecta lo mas grandes. \\
+	
+	Primero observamos el resultado del código de los círculos pequeños dibujados sobre la imagen original: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Detected_circles_1}
+	
+	Después observamos el resultado para detectar los círculos mas grandes: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Detected_circles_2}
+	
+	\section*{Conclusiones}
+	
+	Tomando en cuenta las dificultades presentadas a lo largo del trabajo, si queremos alcanzar una buena precisión en la identificación de las características circulares de las piezas se deberá de crear diferentes secciones de códigos para poder tener una buena identificación de los círculos dependiendo de su tamaño. 
+	
+	
+\end{document}
