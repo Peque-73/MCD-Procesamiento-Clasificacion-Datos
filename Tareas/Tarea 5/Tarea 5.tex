@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{ {C:/Users/alvar/Documents/Maestria en Ciencia de datos/Procesamiento y clasificación de datos/Tarea 5/} }
+
+\title{\textbf{Red convolucional creada por usuario V.S transfer learning}}
+\author{Alvaro Pequeño Mondragón}
+\date{20 de Febrero de 2025}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Introducción}
+	
+	La clase pasada se vio un repaso de lo que son las redes convolucionales y su funcionamiento dentro de la clasificación de imágenes. Una vez hecho el repaso fue explicada una tecnica en la cual se puede usar un modelo ya entrenado como base para poder entrenarlo con nuestro conjunto de datos que puede variar del conjunto con el que se entrenó este modelo base. Esta técnica se conoce como transfer learning y nos permite usar estos modelos entrenados con grandes cantidades de datos y aplicarlos a nuestro set de datos con la ventaja de que al tener una parte pre-entrenada nuestro conjunto de datos ya no necesita ser tan grande para entrenar de buena manera el modelo. \\
+	
+	\section*{Objetivo}
+	
+	El objetivo de esta tarea es comparar el desempeño de una red con una arquitectura creada por nosotros contra el desempeño usando la técnica de transfer learning. Se usará el mismo conjunto de datos para ambos casos y se usaran los mismos datos de entrenamiento y prueba. \\
+	
+	\section*{Resultados}
+	
+	Los modelos se entrenaron con imagenes de 3 animales diferentes: Mariposa, Gato y Caballo. \\
+	
+	Acontinuación se muestra el desempeño de la red convolucional creada por nosotros: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Red convolucional} \\
+	
+	Después observamos el desempeño de la tecnica de transfer learning: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Transfer} \\
+	
+	\section*{Conclusiones}
+	
+	Viendo los resultados que muestran los modelos podemos concluir que usar algún modelo base nos permite poder mejorar la precisión de nuestro modelo que en este caso es para clasificar imágenes. Nuestro conjunto de datos se componía de 150 fotos donde hay 50 por cada animal que tenemos. \\
+	
+	El modelo de transfer learning tiene las mismas capas que en el modelo creado por nosotros con la diferencia de que en transfer learning antes de estas capas se encuentra el modelo base pre-entrenado. \\
+	
+\end{document}
