@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{ {C:/Users/alvar/Documents/Maestria en Ciencia de datos/Procesamiento y clasificación de datos/Tarea 6 & 7/} }
+
+\title{\textbf{Canción original V.S Karaoke}}
+\author{Alvaro Pequeño Mondragón}
+\date{17 de Marzo de 2025}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Introducción}
+	
+	Durante la clase pasada se dio una introducción de como leer, procesar y graficar archivos de audio pudiendo visualizar las características de estos, como lo puede ser la frecuencia, decibeles y su comportamiento a través del tiempo.  \\
+	
+	\section*{Objetivo}
+	
+	El objetivo de esta tarea es comparar el las características que existen en la misma canción solo que una muestra es la canción original y en la otra es la versión de karaoke la cual es la misma pista pero sin voz.\\
+	
+	\section*{Resultados}
+	
+	Lo primero que se realizó fue graficar la amplitud de los sonidos en las canciones a través del tiempo y poder observar si a este nivel hay diferencias entre la pista con voz y el karaoke:\\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Amplitud-tiempo original} \\
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Amplitud-tiempo karaoke} \\
+	
+	De entrada se puede observar que la amplitud es mayor en la canción que tiene la voz del artista, en cuanto a la forma a través del tiempo se puede distinguir que en la versión cantada hay 4 bloques que se pueden distinguir mientras que en la versión karaoke hay 8 bloques de menor duración que se pueden distinguir. Esto puede ser porque en la versión karaoke solo estamos viendo cada vez que un nuevo acorde suena mientras que en la versión cantada la voz elimina los espacios entre los acordes y hace pareces a la gráfica mas continua.\\
+	
+	Después pasamos a observar la grafica de los coeficientes de ambas pistas de sonido:\\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{coeficientes original} \\
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{coeficientes karaoke} \\
+	
+	Podemos observar que si hay diferencias entre ambas imágenes, donde en el primer coeficiente se observa que la version cantada tiene una mayor cantidad de energía a lo largo de la pista mientras que la versión de karaoke tiene momentos de mucha energía que se van desvaneciendo, esto es lo mismo que se observó en las gráficas anteriores donde los acordes nos daban 8 secciones, en el primer canal vemos estas secciones en la versión de karaoke pero la cantada por la voz a lo largo del primer canal se tiene mas energía.\\
+	
+	En general los canales de la versión karaoke se puede ver que tienen un comportamiento cíclico y repetitivo mientras que los canales que comprenden a la versión cantada se muestran patrones más aleatorios que son introducidos por la voz del cantante. \\
+	
+	Por ultimo tenemos el espectrograma de cada una de las pistas donde podemos ver la señal de los sonidos presentes en las pistas: \\
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{spec original} \\
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{spec karaoke} \\
+	
+	Podemos observar que la canción con voz es menos lisa por así decirlo en comparación a la versión de karaoke. Estas ondas que podemos observar en la versión cantada corresponden a la voz del artista mientras que en las partes lisas corresponden a momentos donde el artista no está cantando, es por esto que en la versión de karaoke podemos ver en su mayoría lineas rectas.\\
+	
+	\section*{Conclusiones}
+	
+	En conclusión una pista cantada y la misma pista sin voz tienen diferencias que se pueden distinguir de manera visual analizando diferentes graficas sobre el sonido. En los componentes podemos ver que la versión de solo instrumentos tiende a tener patrones repetitivos mientras que en espectrograma la voz muestra mayores variaciones en la señal mientras que en la versión karaoke podemos ver lineas mas lisas. \\
+	
+
+\end{document}
