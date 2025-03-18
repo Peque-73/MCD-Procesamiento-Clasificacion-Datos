@@ -7,3 +7,4 @@
 - [Tarea 3](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/blob/main/Tareas/Tarea%203/Tarea_3_Alvaro_Peque%C3%B1o.pdf)
 - [Tarea 4](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/blob/main/Tareas/Tarea%204/Tarea_4_Alvaro_Peque%C3%B1o.pdf)
 - [Tarea 5](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/blob/main/Tareas/Tarea%205/Tarea%205.pdf)
+- [Tarea 6](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/blob/main/Tareas/Tarea%206/Tarea%206%20y%207.pdf)
