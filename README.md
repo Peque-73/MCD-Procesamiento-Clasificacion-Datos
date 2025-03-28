@@ -12,8 +12,8 @@
 # Proyecto Final
 ## Identificación de hojas de especificación de luminarias
 
-[Aplicación en streamlit](https://huggingface.co/spaces/Peque-73/MCD-PyCD-Proyecto-final)
-[Archivos en jupyter notebook del procesamiento de datos y el modelo de clasificación](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/tree/main/Tareas/Proyecto%20final)
+- [Aplicación en streamlit](https://huggingface.co/spaces/Peque-73/MCD-PyCD-Proyecto-final)
+- [Archivos en jupyter notebook del procesamiento de datos y el modelo de clasificación](https://github.com/Peque-73/MCD-Procesamiento-Clasificacion-Datos/tree/main/Tareas/Proyecto%20final)
 
 ## Ejenplos de archivos PDFs para probar la aplicación:
 
